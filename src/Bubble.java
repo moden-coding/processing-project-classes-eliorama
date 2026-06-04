@@ -17,6 +17,7 @@ public Bubble(int xPos, int yPos, PApplet c){
     canvas = c;
     speed = 0.3f;
     color = canvas.color(0,255,0);
+    
 
 
 float random = canvas.random(1);

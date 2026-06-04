@@ -73,28 +73,9 @@ public class App extends PApplet {
         y = m*x+b;
 
     }
-    // y = m*x+b;
 
     line(linex,liney,x,y);
     
-        // int linex = 250;
-        // int liney = 735;
-        // float x = linex;
-        // float y = liney;
-
-        // float slopex = mouseX - linex ;
-        // float slopey = mouseY-liney;
-       
-        // float endx = slopex+linex*50;
-        // float endy = slopey+liney*50;
-        // line(x,y, endx, endy);
-        // for(int i = 0; i<100; i++){
-        //     circle(x, y, 5);
-        //     x = x+endx/50;
-        //     y = y+endy/50;
-        // if(x <= 0 || x >=500){
-        //     endx = -endx;
-        // }
-        // }
+     
     }
 }

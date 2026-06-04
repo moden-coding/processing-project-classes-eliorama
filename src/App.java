@@ -60,16 +60,21 @@ public class App extends PApplet {
     float liney = 735;
     float m = (mouseX-linex)/(mouseY-liney);
     float b = liney - m*linex;
-    System.out.println(b);
+    // System.out.println(b);
 
-    // y = m*x+b;
     if(mouseX < width/2){
         y = b;
+        y = m*x+b;
+
     }
     else{
         y = m*width + b;
         x = width;
+        y = m*x+b;
+
     }
+    // y = m*x+b;
+
     line(linex,liney,x,y);
     
         // int linex = 250;

@@ -9,6 +9,7 @@ private int color;
 private String colorType;
 private float speed;
 
+
 public Bubble(int xPos, int yPos, PApplet c){
     x = xPos;
     y = yPos;

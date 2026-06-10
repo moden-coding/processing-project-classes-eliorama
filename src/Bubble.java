@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 import processing.core.PApplet;
 
 public class Bubble {
@@ -15,7 +17,7 @@ public Bubble(int xPos, int yPos, PApplet c){
     y = yPos;
     size = 30;
     canvas = c;
-    speed = 0.3f;
+    speed = 0.2f;
     color = canvas.color(0,255,0);
     
 
@@ -35,8 +37,12 @@ float random = canvas.random(1);
     color = canvas.color(255, 215, 0);
     }
 }
-
-
+public int bubbleArraynumber(){
+    return Arrays.binarySearch(null, canvas);
+}
+public String getColor(){
+    return colorType;
+}
 
     
 
@@ -49,4 +55,16 @@ canvas.fill(color);
 canvas.ellipse(x, y, size, size);
 
 }
+public float getX() {
+    return x;
+}
+
+public float getY() {
+    return y;
+}
+
+public float getSize() {
+    return size;
+}
+
 }

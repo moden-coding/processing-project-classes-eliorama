@@ -11,13 +11,12 @@ private int color;
 private String colorType;
 private float speed;
 
-
 public Bubble(int xPos, int yPos, PApplet c){
     x = xPos;
     y = yPos;
     size = 30;
     canvas = c;
-    speed = 0.2f;
+    speed = 0.4f;
     color = canvas.color(0,255,0);
     
 

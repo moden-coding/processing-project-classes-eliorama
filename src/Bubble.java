@@ -11,7 +11,7 @@ private int color;
 private String colorType;
 private float speed;
 
-public Bubble(int xPos, int yPos, PApplet c){
+public Bubble(int xPos, int yPos, PApplet c){ // this creates the bubble setting its position, size, speed, and color
     x = xPos;
     y = yPos;
     size = 30;
@@ -21,13 +21,13 @@ public Bubble(int xPos, int yPos, PApplet c){
     
 
 
-float random = canvas.random(1);
+float random = canvas.random(1);  // creates a random decimal between 0 and 1
 
-    if(random < .3333333){
+    if(random < .3333333){ // if the decimal is less then 0.3 than the color will be purple
     colorType = "purple";
     color = canvas.color(138, 43, 226);
         }
-    else if(random < .6666666 && random > 0.333333){
+    else if(random < .6666666 && random > 0.333333){ // if the decimal is between 0.3 and 0.6 than the color will be blue
     colorType = "blue";
     color = canvas.color(70, 130, 180);
         }
@@ -36,34 +36,29 @@ float random = canvas.random(1);
     color = canvas.color(255, 215, 0);
     }
 }
-public int bubbleArraynumber(){
-    return Arrays.binarySearch(null, canvas);
-}
-public String getColor(){
-    return colorType;
-}
 
-    
 
-public void moveDown(){
+public void moveDown(){ // moves the y position of the bubble to move downwards 
     y += speed;
 }
 
-public void display(){
+public void display(){ // creates the bubble using it assinged color and current position 
 canvas.fill(color);
 canvas.ellipse(x, y, size, size);
 
 }
-public float getX() {
+public float getX() { // gets x position of bubble
     return x;
 }
 
-public float getY() {
+public float getY() { // gets y position of bubble
     return y;
 }
 
-public float getSize() {
+public float getSize() { //gets size
     return size;
 }
-
+public String getColor(){ // gets color 
+    return colorType;
+}
 }
